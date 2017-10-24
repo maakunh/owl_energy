@@ -40,7 +40,7 @@ class HistoryAPIController extends Controller
         $user_count = User::where('email', $request->email)->where('password', $request->apikey)->count();
         
         if($user_count == 1){
-                $histories_count  = energy_history::where('addr', $request->addr)->where('timestamp', $request->timestamp)->count();
+                $histories_count  = energy_history::where('addr', $request->addr)->where('timestamp', $request->timestamp)->where('email', $request->email)->count();
                 if($histories_count == 0){
                     //追加処理
                     $histories = new energy_history;

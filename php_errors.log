@@ -1,0 +1,6 @@
+[21-Oct-2017 07:19:02 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/owl_energy/vendor/composer/ClassLoader.php on line 444
+[21-Oct-2017 08:19:33 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/owl_energy/vendor/composer/ClassLoader.php on line 444
+[21-Oct-2017 08:25:09 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/owl_energy/vendor/composer/ClassLoader.php on line 444
+[21-Oct-2017 08:40:09 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/owl_energy/vendor/composer/ClassLoader.php on line 444
+[22-Oct-2017 03:44:25 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/owl_energy/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 259
+[22-Oct-2017 06:44:57 UTC] PHP Fatal error:  Can't use function return value in write context in /home/ubuntu/workspace/owl_energy/storage/framework/views/74e72a730f7a4b18a2fb193b6e9f21ca42587a75.php on line 36

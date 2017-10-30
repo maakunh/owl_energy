@@ -80,6 +80,9 @@ class HistoryController extends Controller
                 $objinputdate = new Carbon($inputdate);
                 $objinputdate = $objinputdate->addHour(config('owl_energy.TIMEZONE'));
                 $yesterday1 = $objinputdate->subMonth();
+                if($yesterday1->month == $input_month){
+                    $yesterday1->subDay();
+                }
                 $y_year1 = $yesterday1->year;
                 $y_month1 = $yesterday1->month;
                 

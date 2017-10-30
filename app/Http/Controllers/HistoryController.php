@@ -62,6 +62,7 @@ class HistoryController extends Controller
                     ->withErrors($validator); 
             }
                 $objinputdate = new Carbon($inputdate);
+                $objinputdate = $objinputdate->addHour(config('owl_energy.TIMEZONE'));
                 $input_year = $objinputdate->year;
                 $input_month = $objinputdate->month;
                 $input_day = $objinputdate->day;
@@ -77,6 +78,7 @@ class HistoryController extends Controller
                 $y_timestamp0 = $y_year.substr("0".$y_month, -2).substr("0".$y_day, -2);
                 
                 $objinputdate = new Carbon($inputdate);
+                $objinputdate = $objinputdate->addHour(config('owl_energy.TIMEZONE'));
                 $yesterday1 = $objinputdate->subMonth();
                 $y_year1 = $yesterday1->year;
                 $y_month1 = $yesterday1->month;
